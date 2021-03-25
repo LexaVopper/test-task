@@ -1,0 +1,111 @@
+.tools_block {
+  border-radius: 50px 150px 50px 50px;
+  background-color: rgba(216, 184, 184, 0.466);
+  padding: 5% 0;
+  margin: 10px;
+
+  .container_tools {
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-columns: 1fr;
+
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    .search_block {
+      border: solid 1px black;
+      display: flex;
+      justify-content: space-between;
+
+      padding-left: 10px;
+
+      .example {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          margin-right: 5px;
+          width: 65%;
+          height: 40px;
+        }
+
+        button {
+          margin: 0 auto;
+
+          height: 46px;
+        }
+      }
+    }
+    .toggle_form {
+      button {
+        width: 100px;
+      }
+      .form {
+        background-color: rgba(205, 214, 219, 0.3);
+
+        .add_user_block {
+          margin: 0 auto;
+          margin-top: 15px;
+          height: 100%;
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .submit {
+              margin-top: 25px;
+            }
+            p {
+              margin: 0;
+              font-size: 12px;
+            }
+            label {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    .user_info_block {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      .info_section {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        align-items: center;
+
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #d8d3ab;
+        border-bottom: 1px solid black;
+        margin-top: 2px;
+
+        &.--with_area {
+          textarea {
+            width: 70%;
+            height: 150px;
+            resize: none;
+          }
+        }
+        .user_param {
+          border: solid 1px black;
+          padding: 5px;
+          background-color: rgba(216, 184, 184, 0.466);
+        }
+        .user_disc {
+          border: solid 1px black;
+          padding: 5px;
+
+          background-color: rgba(216, 184, 184, 0.466);
+        }
+      }
+    }
+  }
+}

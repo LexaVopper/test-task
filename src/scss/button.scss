@@ -1,0 +1,57 @@
+.user_category {
+  button {
+    border-radius: 50px 90px;
+    width: 105px;
+    margin: 15px;
+    height: 50px;
+    align-self: center;
+    text-align: left;
+    max-height: 50px;
+    border: 1.5px solid #e34761;
+    font-size: 15px;
+    background-color: rgba(72, 80, 66, 0.144);
+    cursor: pointer;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button:hover {
+    background-color: rgba(216, 184, 184, 0.466);
+    border: 1.5px solid #ffffff;
+    color: white;
+  }
+
+  .active {
+    outline: none;
+    background-color: rgba(216, 184, 184, 0.466);
+    border: 1.5px solid #ffffff;
+    color: white;
+
+    &:before,
+    &:after {
+      content: '';
+      right: 18%;
+      border: solid black;
+      border-width: 8px 1px 5px;
+      position: absolute;
+      transform: rotate(-45deg);
+      transition: all 0.5s linear;
+    }
+
+    &:after {
+      right: 10%;
+      transform: rotate(45deg);
+    }
+
+    &.desc:before {
+      transform: rotate(-135deg);
+    }
+
+    &.desc:after {
+      transform: rotate(135deg);
+    }
+  }
+}

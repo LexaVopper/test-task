@@ -1,0 +1,51 @@
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 10px;
+
+  background-color: #c0bc9b;
+  cursor: pointer;
+  &.active {
+    background-color: #d8d3ab;
+  }
+
+  .block {
+    height: 30px;
+    background-color: rgba(72, 80, 66, 0.144);
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 30%;
+    font-size: 14px;
+
+    p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.--id {
+      width: 5%;
+    }
+    &.--firstName {
+      width: 15%;
+    }
+    &.--lastName {
+      width: 15%;
+    }
+    &.--email {
+      width: 27%;
+    }
+    &.--phone {
+      width: 23%;
+    }
+  }
+}
